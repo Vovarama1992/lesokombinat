@@ -49,6 +49,10 @@ function Formm() {
 
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    if (!conditionToSend) {
+      alert('не все поля заполнены');
+      return;
+    }
     const params = new URLSearchParams(searchParams.toString());
     if (option) {
         params.set('vacancy', option)
@@ -125,7 +129,7 @@ function Formm() {
           <br />
           Я достиг 18-летнего возраста
         </div>
-        <button type="submit" disabled={!conditionToSend} className={styles.sender}>
+        <button type="submit"  className={styles.sender}>
           Отправить анкету
         </button>
       </form>
