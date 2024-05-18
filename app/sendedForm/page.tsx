@@ -4,6 +4,13 @@ import styles from '../page.module.scss';
 import { Suspense } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 export default function SendedForm() {
+         return (
+            <Suspense fallback={<div>Loading...</div>}>
+                <SendedFormm />
+                </Suspense>
+         )
+}
+function SendedFormm() {
     const searchParams = useSearchParams();
     const router = useRouter();
     const params = new URLSearchParams(searchParams);
@@ -15,7 +22,7 @@ export default function SendedForm() {
     const text = `Благодарим за ваш отклик и интерес.`;
 
     return (
-        <Suspense fallback={<div>Loading...</div>}>
+        
             <div className={styles.form}>
                <div className={styles.declaration}>
                Анкета на должность {vacancy} отправлена.
@@ -32,7 +39,7 @@ export default function SendedForm() {
                 На главную
                </button>
             </div>
-        </Suspense>
+        
 
     )
 }

@@ -5,8 +5,14 @@ import Link from 'next/link';
 import { useState, ChangeEvent, Suspense } from 'react';
 
 const text = `Я прочитал(а), ознакомился(лась) и согласен(на) с Политикой конфиденциальности, Согласием на обработку персональных данных физическим лицом. Я осознаю, что даю Согласие на обработку персональных данных для использования предоставляемых возможностей Веб-сервиса.`;
-
 export default function Form() {
+  return(
+    <Suspense fallback={<div>Loading...</div>}>
+      <Formm />
+      </Suspense> 
+  )
+}
+function Formm() {
   const [creds, setCreds] = useState(['', '']);
   const [option, setOption] = useState('прораб');
   const [confirmed, setConfirm] = useState(false);
@@ -57,7 +63,7 @@ export default function Form() {
   }
   
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    
       <form onSubmit={handleSubmit} className={styles.form}>
         <div className={styles.fillTitle}></div>
         <div className={styles.credentials}>
@@ -123,6 +129,6 @@ export default function Form() {
           Отправить анкету
         </button>
       </form>
-    </Suspense>
+    
   );
 }
