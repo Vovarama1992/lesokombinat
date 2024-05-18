@@ -1,0 +1,452 @@
+.form {
+  background: gray;
+  width: 100%;
+  height: 900px;
+}
+
+.fillTitle {
+  position: absolute;
+  background-size: 100% 100%; 
+  background-repeat: no-repeat;
+  width: 195px;
+  height: 22px;
+  top: 89px;
+  left: 83px;
+  gap: 0px;
+  background-image: url('/fillTitle.webp');
+}
+
+.credentials {
+  position: absolute;
+  
+  flex-direction: column;
+  width: 320px;
+  height: 104px;
+  top: 148px;
+  left: 20px;
+  gap: 0px;
+}
+
+.inputWrapper {
+  padding: 5px 1px;
+  border-bottom: 1px solid white;
+}
+
+.input {
+  width: 100%;
+  color: white;
+  border: none;
+  outline: none;
+  background: gray;
+
+  
+}
+sender
+.input::placeholder {
+  color: white;
+}
+.response {
+  position: absolute;
+  background-size: 100% 100%; 
+  background-repeat: no-repeat;
+  background-image: url('/response.webp');
+  width: 186px;
+height: 22px;
+top: 272px;
+left: 30px;
+gap: 0px;
+opacity: 0px;
+background: gray;
+color: white;
+
+}
+
+.jobVacancy {
+  padding: 0 30px;
+  color: white;
+  font-size: 20px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 700px;
+  background: rgb(67, 59, 59);
+}
+.jobVacancy h1 {
+  margin-top: 0px;
+  padding: 0 auto;
+}
+.responser {
+  position: absolute;
+  background: red;
+  opacity: 0.05;
+  width: 270px;
+  height: 59px;
+  left: 50px;
+  top: 873px; 
+}
+.choose {
+  position: relative;
+  background-size: 100% 100%; 
+  background-repeat: no-repeat;
+  position: relative;
+     height: 968px;
+     width: 100%;
+     background-image: url('/choose.webp');
+
+}
+
+.vacancy {
+  position: absolute;
+  opacity: 0.01;
+  left: 20px;
+  z-index: 9999;
+  background: rgb(52, 45, 45);
+  width: 90%;
+  height: 110px;
+}
+.backToVac {
+ margin: 15% 25%;
+  width: 180px;
+  height: 70px;
+  background: red;
+  font-size: 20px;
+  border: none;
+  color: white;
+  border-radius: 35%;
+}
+.selectBlock {
+  width: 320px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  height: fit-content; 
+  max-height: 52px;
+border-bottom: 2px solid white;
+position: absolute;
+top: 294px;
+left: 20px;
+padding: 15px 10px 15px 10px;
+gap: 0px;
+border: 0px 0px 3px 0px;
+justify-content: space-between;
+opacity: 0px;
+
+}
+.select {
+     width: 180px;
+     border: none;
+     outline: none;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.select option {
+  width: 80px;
+  overflow: visible;
+ 
+  margin-left: -30px;;
+}
+list
+.resume {
+  color: white;
+  position: absolute;
+  width: 124px;
+height: 22px;
+top: 366px;
+left: 30px;
+gap: 0px;
+opacity: 0px;
+
+}
+.ifPdf {
+  width: 310px;
+height: 30px;
+top: 403px;
+left: 30px;
+gap: 0px;
+opacity: 0px;
+background: gray;
+color: white;
+font-size: 12px;
+position: absolute;
+  background-size: 100% 100%; 
+  background-repeat: no-repeat;
+}
+
+.checkMark {
+  position: absolute;
+  display: flex;
+  flex-direction: column-reverse;
+  padding-left: 5px;
+  color: white;
+  background: gray;
+  text-align: center;
+  width: 240px;
+height: 270px;
+top: 185px;
+left: 62px;
+gap: 45px;
+opacity: 0px;
+
+}
+
+.innerCheck {
+  position: absolute;
+  left: 30%;
+  top: 29px;
+  background-image: url('/checkmark.png');
+  background-size: 100% 100%; 
+  background-repeat: no-repeat;
+  width: 90px;
+  height: 90px;
+}
+.returnButton {
+  position: absolute;
+  width: 156px;
+  background: red;
+  color: white;
+  border: none;
+height: 40px;
+top: 555px;
+left: 102px;
+border-radius: 30px;
+opacity: 0px;
+
+}
+.declaration {
+  position: absolute;
+  color: white;
+  font-size: 20px;
+  width: 205px;
+height: 22px;
+top: 89px;
+left: 98px;
+gap: 0px;
+opacity: 0px;
+
+}
+.loader {
+  position: absolute;
+  background: green;
+  width: 184px;
+  border: none;
+  color: white;
+  max-height: 40px;
+top: 448px;
+left: 20px;
+padding: 10px 36px 10px 36px;
+gap: 10px;
+border-radius: 30px ;
+opacity: 0px;
+
+}
+.confirmer {
+  position: relative;
+  color: white;
+  width: 320px;
+height: 120px;
+top: 523px;
+left: 20px;
+gap: 5px;
+opacity: 0px;
+
+}
+.checkbox {
+  
+  left: 0px;
+  top: 5px;
+  width: 16px;
+  height: 16px;
+}
+.sender {
+  position: absolute;
+  width: 200px;
+height: 40px;
+top: 830px;
+left: 74px;
+border: none;
+background: green;
+font-size: 17px;
+color: white;
+border-radius: 30px;
+opacity: 0px;
+
+}
+.advantages {
+  position: relative;
+  text-align: center;
+  width: 360px;
+  height: 445px;
+  
+color: white;
+
+
+}
+.advantageDesc {
+  z-index: 9999;
+  padding-top: 115px;
+  background: white;
+  color: rgb(37, 36, 36);
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+height: 100%;
+
+
+}
+.list {
+  margin-top: 0;
+  text-align: start;
+  list-style-type: none; 
+  padding: 8px; 
+  
+}
+.list li {
+  display: flex;
+  font-size: 16px;
+  align-items: center;
+  border-bottom: 2px solid white;
+  height: 56px;;
+}
+.list h1 {
+    height: 15px;
+    background: red;
+}
+.plus {
+  flex-shrink: 0;
+  margin-left: auto;
+  width: 30px;
+  border: none;
+  height: 30px;
+  border-radius: 50%;
+  background-image: url('/plus.png');
+  background-size: 100% 100%; 
+  background-repeat: no-repeat;
+}
+.products {
+  position: relative;
+  background-image: url('/products.webp');
+  background-size: 100% 100%; 
+  background-repeat: no-repeat;
+  width: 101%;
+height: 444px;
+
+left: -1px;
+
+opacity: 0px;
+
+}
+
+.productView {
+    position: absolute;
+    background-size: 100% 100%; 
+  background-repeat: no-repeat;
+    top: 173px;
+    left: 105px;
+    width: 150px;
+    height: 174px;
+    border-radius: 8px;
+    
+}
+.viewclicker {
+  position: absolute;
+  z-index: 999;
+  background: gray;
+  color: white;
+  opacity: 1;
+  width: 126px;
+  height: 35px;
+  border-radius: 6px;
+  top: 100px;
+
+}
+.bath {
+  left: 62px;
+  margin-right: 5px;
+}
+.house {
+  left: 188px;
+}
+.arrow {
+  position: absolute;
+  opacity: 0;
+  height: 135px;
+  width: 70px;
+  top: 194px;
+  background: green;
+}
+.righter{
+  right: 2px;
+}
+
+.growth {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 360px;
+  height: 877px;
+  color: white;
+  
+  
+}
+.growth h1 {
+  margin-left: 40px;
+  width: 90%;
+height: 22px;
+
+
+
+}
+.growth p {
+  
+  width: 320px;
+height: 65px;
+margin-top: 5px;
+margin-left: 20px;
+
+
+}
+.growth img {
+  
+  margin-top: 140px;
+  margin-left: 23%;
+  width: 200px;
+  height: 200px;
+}
+.growth h2 {
+  
+  margin-left: 40px;
+   margin-top: 5px;
+   display: flex;
+   flex-direction: column;
+   
+}
+.personDesc {
+  margin-top: 0px;
+  
+  display: flex;
+    flex-wrap: wrap;
+}
+.personDesc li {
+  margin-bottom: 7px;
+}
+.personArrow {
+  position: absolute;
+  font-size: 28px;
+  color: white;
+  background: gray;
+  border: none;
+  top: 300px;
+  height: 180px;
+  width: 40px;
+}
+.personLeft {
+  right: 0px;
+}
+
+
+
+
+
